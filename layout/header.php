@@ -46,7 +46,7 @@ if (!$loginUser) {
                             <img src="assets/images/avatar.png" width="40" height="40"> <?= $_SESSION['name'] ?>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="my-profile.php">Profile</a></li>
+                            <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>

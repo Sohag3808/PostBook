@@ -40,7 +40,7 @@ $user = mysqli_fetch_assoc($result);
               <div class="col-lg-3 order-lg-2">
                 <div class="card-profile-image">
                   <a href="#">
-                    <img src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg" class="rounded-circle">
+                    <img src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg" width="100%" class="rounded-circle">
                   </a>
                 </div>
               </div>

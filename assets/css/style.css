@@ -9,3 +9,33 @@
         margin: auto;
     }
 }
+
+
+.profile_header{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.profile_header>img{
+    width: 100%;
+    height: auto;
+}
+.profile_header .contents{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.text-gray{
+    color: #6c757d;;
+}
+
+.profile_Content{
+    margin-top: -48px;
+    padding-bottom: 50px;
+}

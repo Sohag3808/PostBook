@@ -2,14 +2,6 @@
 session_start();
 include('connection.php');
 
-// $file = $_FILES['photo']['name'];
-// $fileExtention = pathinfo($file, PATHINFO_EXTENSION);
-// $newPhoto = date('d-m-Y') . '-' . time() . '.' . $fileExtention;
-// $uploadPath = '../uploads/';
-// $file_tmp_name = $_FILES['photo']['tmp_name'];
-// move_uploaded_file($file_tmp_name, $uploadPath . $newPhoto);
-
-
 $profile_photo = $_FILES['profile_photo']['name'];
 $fileExtention = pathinfo($profile_photo,PATHINFO_EXTENSION);
 $newPhotoName = date('d-m-Y') . time(). rand(0000000000,9999999999). '.' .$fileExtention;
