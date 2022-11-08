@@ -73,7 +73,7 @@ $user = mysqli_fetch_assoc($result);
         <div class="card border-0" style="border-radius: 8px;">
             <div class="card-body">
                 <div class="thumbnail text-center">
-                    <img src="assets/images/avatar.png" class="rounded-circle" width="100" height="100">
+                    <img src="uploads/<?= $user['profile_photo'] ?>" class="rounded-circle" width="100" height="100">
                 </div>
                 <h2 class="text-center mt-2"><?= $user['name'] ?? 'N/A' ?></h2>
             </div>

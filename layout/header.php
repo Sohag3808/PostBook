@@ -8,6 +8,15 @@ $loginUser = $_SESSION['name'];
 if (!$loginUser) {
     header('location: login.php');
 }
+
+include('database/connection.php');
+
+$id = $_SESSION['id'];
+
+$userArr = mysqli_query($conn,"SELECT * FROM  user where id=$id");
+
+$user = mysqli_fetch_assoc($userArr);
+
 ?>
 
 
@@ -43,7 +52,7 @@ if (!$loginUser) {
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/images/avatar.png" width="40" height="40"> <?= $_SESSION['name'] ?>
+                            <img src="uploads/<?= $user['profile_photo'] ?>" width="40" height="40"> <?= $_SESSION['name'] ?>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="profile.php">Profile</a></li>
