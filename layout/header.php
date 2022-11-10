@@ -36,14 +36,14 @@ $user = mysqli_fetch_assoc($userArr);
 
     <nav class="navbar navbar-expand-md navbar-dark navbarBG p-0 m-0">
         <div class="container">
-            <a class="navbar-brand" href="#">PostBook</a>
+            <a class="navbar-brand" href="index.php">PostBook</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active">Home</a>
+                        <a href="index.php" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="my-profile.php">Profile</a>
